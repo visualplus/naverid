@@ -1,0 +1,18 @@
+{
+    "name": "visualplus/naverid",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "doojin so",
+            "email": "sodoojin@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Visualplus\\Naverid\\": "src/"
+        }
+    },
+    "require": {
+    	"laravel/socialite": "v2.0"
+    }
+}
