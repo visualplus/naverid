@@ -29,3 +29,27 @@ config/app.php에 aliases 등록
 ## 사용방법
 
 laravel/socialite와 사용방법이 동일합니다.
+
+config/services.php 에 설정 등록
+
+```
+'naverid' => [
+	'client_id'		=> '',
+	'client_secret' => '',
+	'redirect'		=> '',
+]
+```
+
+네이버 로그인
+```
+Route::get('auth/naverid', function() {
+	return Socialite::driver("naverid")->redirect();
+});
+```
+
+로그인 후
+```
+Route::get('auth/naverid/redirect', function() {
+	dd(Socialite::driver("naverid")->user());
+});
+```
