@@ -53,3 +53,9 @@ Route::get('auth/naverid/redirect', function() {
 	dd(Socialite::driver("naverid")->user());
 });
 ```
+
+### 네이버 키 발급
+
+아래 사이트를 참고해주세요.
+
+https://nid.naver.com/devcenter/products.nhn 
