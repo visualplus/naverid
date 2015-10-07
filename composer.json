@@ -13,6 +13,6 @@
         }
     },
     "require": {
-    	"laravel/socialite": ">=v2.0"
+    	"socialiteproviders/manager": ">=1.0"
     }
 }
